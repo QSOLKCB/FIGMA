@@ -1,60 +1,99 @@
-QSOL-FIGMA: Meme Deployment Infrastructure (v0.1α)
+QSOL-Lite React Spec
 
-Mission Statement:
-To weaponize irony, humor, and absurdity using enterprise-grade Figma pipelines.
-Because not every artifact needs to obey The Spec — some are meant to break it beautifully.
+Optimized for Figma Make Environment
 
-🧠 Overview
-
-QSOL-FIGMA is a post-compliance subsystem designed to explore the unstable boundary between art, humor, and UI prototyping malpractice.
-This repository represents the MemeOps Division of QSOL-IMC: a research unit dedicated to investigating why clicking things that say “haha” makes developers slightly happier.
-
-⚙️ Core Principles
-Principle	Description
-Intentionally Inefficient	Render time should scale logarithmically with absurdity.
-Interactive Nonsense	Every button must do something nobody asked for.
-Aesthetic Chaos	If it looks slightly cursed, it’s probably correct.
-Spec Violation = Feature	Non-compliance is logged as innovation.
-Figma Is Funny Now	We stopped fighting it. It won.
-🧩 Architecture
-
-The system is composed of three primary components:
-
-Frontend (Figma Make Runtime)
-Where memes are prototyped, misaligned, and reluctantly exported as “design systems.”
-
-Middleware (Emotional Damage Layer)
-Converts user input into unexpected responses (e.g., “I can’t believe it’s not React!”).
-
-Backend (Quantum Humor Core)
-A hypothetical neural layer trained on Red Dwarf reruns, Australian satire, and open-source regret.
-
-🔘 Interactive Schema
-UI Element	Behavior
-[Click Me]	Says something dumb, delays enlightenment.
-[Deploy Meme]	404s intentionally.
-[Enable Quantum Humor]	Disables logic.
-[Comply with QSOL Spec]	Displays “Error: Comedy Not Found.”
-🧪 Developer Setup
-
-Clone at your own risk:
-
-git clone https://github.com/QSOLKCB/FIGMA.git
-cd FIGMA/src
-npm run meme
+Purpose:
+This document defines a practical subset of the QSOL development philosophy, adapted for Figma’s React-based runtime. Figma’s Make environment enforces React hydration and bundled dependencies—this spec minimizes overhead while preserving QSOL’s spirit: Small is Beautiful, Fast is Holy.
 
 
-If it builds successfully, that’s a bug.
+---
 
-🚫 Known Issues
+Core Principles
 
-Figma occasionally believes it’s an operating system.
+1. Lean React – write minimal, explicit components.
 
-Humor intensity may exceed workplace safety standards.
 
-Occasionally passes the QSOL Spec validator by accident.
+2. Static First – default to pre-rendered sections.
 
-📜 License
 
-Licensed under the QSOL Public Absurdity License (QPAL-1.0).
-Redistribution permitted only if you also redistribute confusion.
+3. Explicit State – no phantom props or context chains.
+
+
+4. Native Tokens – use Figma’s design tokens instead of custom CSS variables.
+
+
+5. Measured Complexity – every dependency must earn its weight.
+
+
+
+
+---
+
+Performance Targets
+
+Metric	Goal
+
+Bundle size	≤ 400 KB gzipped
+Time to Interactive	≤ 1.5 s
+Component depth	≤ 3 levels
+Hooks per component	≤ 3
+Imported libraries	≤ 50 KB each
+
+
+
+---
+
+Build Rules
+
+Entry Point: index.jsx
+
+Theme: theme.css only; no CSS-in-JS.
+
+Routing: None—use conditional rendering.
+
+Memoization: Use useMemo, useCallback, and React.memo only where profiling proves value.
+
+Imports: Tree-shake aggressively. No wildcard or default-export imports from libraries.
+
+Async Work: Push non-critical logic to requestIdleCallback or delayed effects.
+
+
+
+---
+
+Styling
+
+Map all visual elements to Figma token variables for color, spacing, and typography.
+
+Keep gradients, shadows, and filters under 10 % of total elements.
+
+Prefer inline token references over global CSS classes.
+
+Avoid animation libraries—use CSS keyframes or React’s built-in transitions.
+
+
+
+---
+
+Deployment
+
+Use ReactDOMServer.renderToStaticMarkup() for static HTML export.
+
+Cache and compress all images before upload.
+
+Disable rehydration for non-interactive components.
+
+Validate final gzip size and load time before publication.
+
+
+
+---
+
+Philosophy in Practice
+
+> QSOL-Lite = React discipline under constraint.
+Think modular, explicit, cacheable. Every kilobyte counts.
+
+
+
+This spec represents a truce between raw performance and Figma’s sandbox. Follow it, and your builds will stay fast, stable, and close to the QSOL ideal.
