@@ -89,11 +89,32 @@ Validate final gzip size and load time before publication.
 
 ---
 
-Philosophy in Practice
+Meme Mode
 
-> QSOL-Lite = React discipline under constraint.
-Think modular, explicit, cacheable. Every kilobyte counts.
+“Meme Mode” is not a joke—it’s a stability hack.
+Injecting light, static media or playful placeholder elements keeps Figma’s compiler from over-optimizing or re-hydrating fragments. A well-placed meme or humorous asset can anchor the render tree, preventing unwanted refactors and cache invalidations.
+Think of it as quantum noise to stabilize the waveform: harmless chaos that preserves coherence.
+
+
+---
+
+Mythic Spec
+
+> “All systems drift toward entropy; elegance resists.”
 
 
 
-This spec represents a truce between raw performance and Figma’s sandbox. Follow it, and your builds will stay fast, stable, and close to the QSOL ideal.
+The Mythic Spec is the philosophical core of QSOL-Lite:
+
+Every byte must justify its existence.
+
+Code is architecture—clarity equals speed.
+
+Tools are fallible; humor is armor.
+
+A meme is a unit test for humanity.
+
+When optimization becomes religion, remember: the gods of runtime demand tribute, not worship.
+
+
+QSOL-Lite isn’t just a technical doctrine—it’s a reminder that the line between code and art, signal and noise, is where the myth lives.
